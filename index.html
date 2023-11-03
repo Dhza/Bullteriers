@@ -15,8 +15,7 @@
    <meta name="author" content="">
    <!-- bootstrap css -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
-   <!-- style css -->
-   <link rel="stylesheet" href="./css/style.css">
+
    <!-- Responsive-->
    <link rel="stylesheet" href="css/responsive.css">
    <!-- fevicon -->
@@ -27,87 +26,54 @@
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
    <!-- https://www.free-css.com/free-css-templates/page274/blogger -->
+
+   <!-- style css -->
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 <!-- body -->
 
 <body class="main-layout">
    <!-- loader  -->
-   <div class="loader_bg">
+   <!-- <div class="loader_bg">
       <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-   </div>
+   </div> -->
    <!-- end loader -->
-   <!-- header -->
-   <header>
-      <!-- header inner -->
-      <div class="head_top">
-         <div class="header">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                           data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#about">O nas</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#contact">Kontakt</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
-            </div>
+ 
+<navbar class="navbar">
+   <div class="container">
+      <div class="navbar__nav">
+         <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+         </ul>
+         
+      </div>
+   </div>
+</navbar>
+   <header class="header">
+      <div class="container">
+         <div class="header__box">
+            <h1 class="header__box-heading">Blog <br> O bulterierach</h1>
+            <p class="header__box-text">Bulteriery to psy pełne charakteru i miłości, które zdobyły serca wielu ludzi na całym
+               świecie. Zapraszamy Was do odkrycia ich fascynującej historii, wyjątkowych cech charakteru
+               oraz praktycznych wskazówek dotyczących opieki nad nimi.</p>
+               <div class="header__box-text">Dowiedzcie się, dlaczego
+                  bulteriery
+                  są jednymi z najwspanialszych przyjaciół człowieka.</div>
+               <a href="#about" class="header__box-button">Dowiedz się więcej!</a>
          </div>
-         <!-- end header inner -->
-         <!-- end header -->
-         <!-- banner -->
-         <section class="banner_main">
-            <div class="container">
-               <div class="row d_flex">
-                  <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
-                     <div class="text-bg">
-                        <h1>Blog<br> <span class="white1">O bulterierach</span></h1>
-                        <p>Witajcie w świecie bulterierów! 🐶💕
-
-                           Bulteriery to psy pełne charakteru i miłości, które zdobyły serca wielu ludzi na całym
-                           świecie. Zapraszamy Was do odkrycia ich fascynującej historii, wyjątkowych cech charakteru
-                           oraz praktycznych wskazówek dotyczących opieki nad nimi. Dowiedzcie się, dlaczego bulteriery
-                           są jednymi z najwspanialszych przyjaciół człowieka.</p>
-                        <a href="#titlepage">Zobacz więcej</a>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
-
-                  </div>
-               </div>
-            </div>
-         </section>
       </div>
    </header>
-   <!-- end banner -->
-   <!-- blog_main -->
    <div class="blog_main" id="about">
       <div class="container">
          <div class="row">
@@ -120,12 +86,14 @@
          <!-- fist section -->
          <div class="row">
             <div class="col-md-12">
-               <div class="our_two_box">
+               <div class="our_two_box our__box">
                   <div class="row d_flex">
 
                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="our_img">
-                           <figure><img src="images/dog-2707523_1920.jpg" alt="#" /></figure>
+                           <a href="blog1.html" target="_blank">
+                              <figure><img src="images/dog-2707523_1920.jpg" alt="#" /></figure>
+                           </a>
                         </div>
                      </div>
                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -136,7 +104,7 @@
                               artykule przyjrzymy się bliżej temu niezwykłemu psu, odkrywając 10 ciekawostek o
                               bulterierach, które zapewne was zaskoczą. Jeśli jesteście gotowi na podróż po świecie tej
                               rasy, to ruszajmy razem w drogę poznawania bulterierów!<a href="blog1.html"
-                                 class="seeMoreLink">Zobacz więcej</a></p>
+                                 class="seeMoreLink">Czytaj dalej</a></p>
                         </div>
                      </div>
                   </div>
@@ -147,11 +115,14 @@
          <!-- secend section -->
          <div class="row">
             <div class="col-md-12">
-               <div class="our_two_box">
-                  <div class="row">
-                     <div class="col-md-12">
+               <div class="our_two_box our__box">
+                  <div class="row ">
+                     <div class="col-md-12 ">
                         <div class="our_img">
-                           <figure><img class="he_img" src="images/bull-terrier-949979_1920.jpg" alt="#" /></figure>
+                           <a href="blog2.html" target="_blank">
+
+                              <figure><img class="he_img" src="images/bull-terrier-949979_1920.jpg" alt="#" /></figure>
+                           </a>
 
 
                            <div class="our_text_box position_box">
@@ -161,7 +132,7 @@
                                  wyjątkowym temperamentem. W tym artykule przyjrzymy się bliżej tym fascynującym
                                  czworonogom, przedstawiając pochodzenie, opis i charakterystykę rasy Bulterier. Czyli
                                  wszystko co powinieneś wiedzieć, zanim zdecydujesz się na przyjęcie przedstawiciela tej
-                                 rasy do swojej rodziny.<a href="blog2.html" class="seeMoreLink">Zobacz więcej</a></p>
+                                 rasy do swojej rodziny.<a href="blog2.html" class="seeMoreLink">Czytaj dalej</a></p>
 
                            </div>
                         </div>
@@ -171,59 +142,79 @@
                </div>
             </div>
          </div>
+
+
+
          <!-- end secend section -->
 
          <div class="row">
             <div class="col-md-6 padding_bottom2">
-               <div class="our_img">
-                  <figure><img src="images/staffordshire-bull-terrier-7043691_1920.jpg" alt="#" /></figure>
-               </div>
-               <div class="our_text_box three_box">
+               <div class="our__box">
 
 
-                  <div class="post_box d_flex padding_top3">
-                     <h3 class="awesome pa_wi">Bulterrier - szczeniaki ile kosztują i jak
-                        wybrać?</h3>
+                  <div class="our_img">
+                     <a href="blog3.html" target="_blank">
 
+                        <figure><img src="images/staffordshire-bull-terrier-7043691_1920.jpg" alt="#" /></figure>
+                     </a>
                   </div>
-                  <p>Rasa Bulterier, znana ze swojej niezwykłej odwagi, wierności i urody, zyskuje coraz większą
-                     popularność wśród miłośników psów na całym świecie. Dla wielu z nas to nie tylko
-                     czworonóg, ale prawdziwy towarzysz, który staje się częścią rodziny. Jeśli zastanawiasz się
-                     nad posiadaniem Bulteriera i zastanawiasz się, ile kosztują szczeniaki oraz jak dokładnie
-                     wybrać tego wyjątkowego pupila, to jesteś we właściwym miejscu. <a href="blog3.html"
-                        class="seeMoreLink">Zobacz więcej</a></p>
+                  <div class="our_text_box three_box ">
+
+
+                     <div class="post_box d_flex padding_top3">
+                        <h3 class="awesome pa_wi">Bulterrier - szczeniaki ile kosztują i jak
+                           wybrać?</h3>
+
+                     </div>
+                     <p>Rasa Bulterier, znana ze swojej niezwykłej odwagi, wierności i urody, zyskuje coraz większą
+                        popularność wśród miłośników psów na całym świecie. Dla wielu z nas to nie tylko
+                        czworonóg, ale prawdziwy towarzysz, który staje się częścią rodziny. Jeśli zastanawiasz się
+                        nad posiadaniem Bulteriera i zastanawiasz się, ile kosztują szczeniaki oraz jak dokładnie
+                        wybrać tego wyjątkowego pupila, to jesteś we właściwym miejscu. <a href="blog3.html"
+                           class="seeMoreLink">Czytaj dalej</a></p>
+                  </div>
                </div>
             </div>
             <div class="col-md-6">
-               <div class="our_img">
-                  <figure><img src="images/dog-6644644_1920.jpg" alt="#" /></figure>
-               </div>
-               <div class="our_text_box three_box">
+               <div class="our__box">
 
+                  <div class="our_img">
+                     <a href="blog4.html" target="_blank">
 
-                  <div class="post_box d_flex padding_top3">
-                     <h3 class="awesome pa_wi">Czy bulterier to pies dla Ciebie?</h3>
-
+                        <figure><img src="images/dog-6644644_1920.jpg" alt="#" /></figure>
+                     </a>
                   </div>
-                  <p>Zapraszam Cię do rozpoczęcia swojej fascynującej podróży po świecie czworonogów, gdzie
-                     odkryjesz jeden z najbardziej ekscytujących i uroczych psich towarzyszy - bulteriera. Te
-                     energiczne i pełne wdzięku psy są coraz bardziej popularne. Przyjrzymy się ich głównym
-                     cechom, temperamentowi i potrzebom, pomagając Ci zrozumieć, czy ta rasa jest
-                     odpowiednia dla Twojego stylu życia i osobowości. Przygotuj się na fascynującą podróż po
-                     świecie psów i odkryj,<span class="boldText"> czy bulterier to pies dla ciebie.</span> <a
-                        href="blog4.html" class="seeMoreLink">Zobacz więcej</a></p>
+                  <div class="our_text_box three_box">
+
+
+                     <div class="post_box d_flex padding_top3">
+                        <h3 class="awesome pa_wi">Czy bulterier to pies dla Ciebie?</h3>
+
+                     </div>
+                     <p>Zapraszam Cię do rozpoczęcia swojej fascynującej podróży po świecie czworonogów, gdzie
+                        odkryjesz jeden z najbardziej ekscytujących i uroczych psich towarzyszy - bulteriera. Te
+                        energiczne i pełne wdzięku psy są coraz bardziej popularne. Przyjrzymy się ich głównym
+                        cechom, temperamentowi i potrzebom, pomagając Ci zrozumieć, czy ta rasa jest
+                        odpowiednia dla Twojego stylu życia i osobowości. Przygotuj się na fascynującą podróż po
+                        świecie psów i odkryj,<span class="boldText"> czy bulterier to pies dla ciebie.</span> <a
+                           href="blog4.html" class="seeMoreLink">Czytaj dalej</a></p>
+                  </div>
                </div>
             </div>
-         </div>
 
+         </div>
 
          <div class="row">
             <div class="col-md-12">
-               <div class="our_two_box magna_top90">
+
+               <div class="our_two_box magna_top90 our__box">
                   <div class="row d_flex">
                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="our_img">
-                           <figure><img src="images/dog-4592527_1920.jpg" alt="#" /></figure>
+                           <a href="blog5.html" target="_blank">
+
+                              <figure><img src="images/dog-4592527_1920.jpg" alt="#" /></figure>
+                           </a>
                         </div>
                      </div>
                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -236,7 +227,7 @@
                               aktywność fizyczną i są niezwykle lojalni wobec swoich właścicieli. Dziś przyjrzymy się
                               ich
                               zdrowiu oraz predyspozycjom do chorób.
-                              <a href="blog5.html" class="seeMoreLink">Zobacz więcej</a>
+                              <a href="blog5.html" class="seeMoreLink">Czytaj dalej</a>
                            </p>
 
                         </div>
@@ -246,94 +237,92 @@
             </div>
          </div>
 
-
       </div>
-   </div>
 
 
-   <!-- contact -->
-   <div id="contact" class="contact">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="titlepage">
-                  <h2>Skontaktuj się z nami!</h2>
-                  <span>Wypełnij poniższy formularz aby się z nami skontaktować. </span>
+      <!-- contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Skontaktuj się z nami!</h2>
+                     <span>Wypełnij poniższy formularz aby się z nami skontaktować. </span>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 ">
-               <form class="main_form ">
-                  <div class="row">
-                     <div class="col-md-12 ">
-                        <input class="form_contril" placeholder="Name " type="text" name="Name ">
-                     </div>
-                     <div class="col-md-12">
-                        <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
-                     </div>
-                     <div class="col-md-12">
-                        <input class="form_contril" placeholder="Email" type="text" name="Email">
-                     </div>
-                     <div class="col-md-12">
-                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                     </div>
-                     <div class="col-sm-12">
-                        <button class="send_btn">Wyślij</button>
-                     </div>
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- end contact -->
-   <!--  footer -->
-   <footer>
-      <div class="footer">
          <div class="container">
             <div class="row">
                <div class="col-md-12 ">
-                  <div class="cont">
-                     <h3> <strong class="multi"> Free Multipurpose Responsive</strong><br>
-                        Landing Page 2019
-                     </h3>
-                  </div>
-               </div>
-               <div class="col-md-12">
-                  <ul class="social_icon">
-                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="copyright">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a>
-                     </p>
-                  </div>
+                  <form class="main_form ">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="form_contril" placeholder="Name " type="text" name="Name ">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="form_contril" placeholder="Email" type="text" name="Email">
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                           <button class="send_btn">Wyślij</button>
+                        </div>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
       </div>
-   </footer>
-   <!-- end footer -->
-   <!-- Javascript files-->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi"> Free Multipurpose Responsive</strong><br>
+                           Landing Page 2019
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
 
-   <!-- sidebar -->
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
-   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
