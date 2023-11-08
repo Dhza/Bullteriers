@@ -73,7 +73,7 @@ body {
 	list-style-type: none;
 	text-transform: uppercase;
 	font-size: 1.2rem;
-	margin:2em 0;
+	margin: 2em 0;
 }
 .other-entries ul li a {
 	padding: 1em 0;
@@ -170,18 +170,18 @@ body {
 	height: 100%;
 	width: 4px;
 }
-.navbar{
+.navbar {
 	background-color: #fff;
 	border-bottom: 2px solid #000;
 	width: 100%;
 	height: 80px;
 }
 
-.navbar__nav{
+.navbar__nav {
 	display: flex;
 	width: 100%;
 }
-.navbar__nav ul{
+.navbar__nav ul {
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
@@ -193,7 +193,7 @@ body {
 	font-size: 1.5rem;
 	text-decoration: none;
 }
-.navbar__nav a:hover{
+.navbar__nav a:hover {
 }
 @media (min-width: 576px) {
 	.blog__entry-title {
@@ -1068,4 +1068,136 @@ ul.social_icon li a:hover {
 .text {
 	flex: 1;
 	padding: 0 2em;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.post {
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+	height: 100%;
+	flex-direction: row;
+	justify-content: center;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+	align-items: center;
+	border-radius: 14px;
+	overflow: hidden;
+	margin-bottom: 33em;
+}
+.post__img {
+	width: 50%;
+	height: auto;
+}
+.post__img img {
+	width: 100%;
+	height: 100%;
+}
+.post__text {
+	padding: 0.5em;
+	width: 50%;
+	padding-left: 1em;
+}
+.post__text h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.post__text p {
+	font-size: 1.2rem;
+}
+.wpis,
+.wpis2 {
+	width: 90%;
+	margin: 0 auto;
+}
+.wpis {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4em auto;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 14px;
+	overflow: hidden;
+}
+.wpis:last-of-type {
+	flex-direction: row-reverse;
+}
+.zdjecie {
+	flex: 1 1 50%;
+	max-height: 100%;
+}
+.row {
+	width: 90%;
+	margin: 0 auto;
+}
+.tekst {
+	flex: 1 1 50%;
+	padding: 2em;
+}
+.tekst p,
+.tekst2 p {
+	color: #5b5b5b;
+	font-size: 1.2rem;
+	line-height: 30px;
+	display: inline-block;
+	font-weight: 500;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.wpis2 {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+	height: 100%;
+	border-radius: 14px;
+	overflow: hidden;
+	margin: 5em auto;
+}
+
+.zdjecie2 {
+	flex: 0 0 40%;
+}
+
+.tekst2 {
+	flex: 1 1 60%;
+	padding: 2em;
+}
+.tekst2 h3 {
+	color: #000;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 768px) {
+	.zdjecie,
+	.tekst {
+		flex: 0 0 100%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.header__box-heading {
+		font-size: 1.5rem;
+	}
+
+	.header__box-text {
+		font-size: 0.8rem;
+	}
+}
+@media (max-width: 992px) {
+	.zdjecie,
+	.tekst {
+		flex: 1 100%;
+	}
 }
